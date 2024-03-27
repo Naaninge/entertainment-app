@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+   <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Entertainment web app</title>
+</head>
+<body>
+
+   <main class="form-main">
+    <span class="center-logo"><svg width="33" height="27" xmlns="http://www.w3.org/2000/svg"><path d="m26.463.408 3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-1.6a3.186 3.186 0 0 0-3.184 3.2l-.016 19.2a3.2 3.2 0 0 0 3.2 3.2h25.6a3.2 3.2 0 0 0 3.2-3.2V.408h-6.4Z" fill="#FC4747"/></svg></span>
+    <form class="sign-up">
+      <header>
+        <h2> Sign Up</h2>
+      </header>
+       <div class="form-items">
+         <div class="input-item">
+           <input type="text" placeholder=" Email address" id="email">
+          <span class="error emailErr"></span>
+         </div>
+           <div class="input-item">
+            <input type="password" placeholder="Password" id="password">
+          <span class="error passErr"></span>
+         </div>
+           <div class="input-item">
+             <input type="password" placeholder="Repeat Password" id="r-password">
+          <span class="error repassErr"></span>
+         </div>  
+       </div>
+       <button class="red-btn" type="submit"> Create an account</button>
+       <p class="red-text">Already have an account? <a href="login.html"> Login</sp></p>
+       
+    </form>
+
+
+
+    <script type="module" src="js/validateSignUp.js"></script>
+
+</body>
+</html>
