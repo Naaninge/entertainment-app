@@ -77,7 +77,7 @@ ul {
   list-style: none;
   display: grid;
   place-items: center;
-  gap: 2.5rem;
+  gap: 2.5vw;
   padding-top: 4rem;
 }
 
@@ -241,7 +241,6 @@ article.main-content .search-container img {
 .trending-container{
   overflow-x: auto;
   overscroll-behavior-inline: contain;
- 
   
 }
 .trending-container::-webkit-scrollbar{
@@ -376,13 +375,14 @@ span.bookmarked.bookmarked-white svg path {
 .hide {
   display: none;
 }
+
+/* ===================Loading =================== */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
   }
 }
 
-/* ===================Loading =================== */
 .loading-div {
   position: absolute;
   background-color: var(--darker-blue);
@@ -390,8 +390,8 @@ span.bookmarked.bookmarked-white svg path {
   bottom: 0;
   left:0;
   right: 0;
-  /* z-index: 999; */
   width: 100%;
+  
 }
 .loading {
   position: absolute;
@@ -408,7 +408,16 @@ span.bookmarked.bookmarked-white svg path {
   background-color: var(--darker-blue);
 }
 
+main#trending-main article.main-content div.loading-div{
+ left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
 
+main#trending-main article.main-content div.loading-div div.loading{
+  left: 40%;
+ 
+}
 
 
 /* =============== Play Button ================== */
@@ -560,7 +569,7 @@ span.bookmarked.bookmarked-white svg path {
   nav img {
     position: absolute;
     bottom: 1rem;
-    left: 90%;
+    left: 85%;
     right: 0;
     border: 1px solid var(--white);
     border-radius: 50%;
@@ -590,10 +599,9 @@ span.bookmarked.bookmarked-white svg path {
   ul {
     display: flex;
     justify-content: center;
-    /* place-items: center; */
-    gap: 2.5rem;
+    gap: 2rem;
     padding-top: 24px;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
   .center-logo {
     margin: 39px auto;
